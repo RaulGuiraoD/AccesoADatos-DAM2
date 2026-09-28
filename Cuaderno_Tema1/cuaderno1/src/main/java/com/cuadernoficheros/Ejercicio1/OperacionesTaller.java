@@ -14,15 +14,15 @@ public class OperacionesTaller {
             fichero.createNewFile();
             System.out.println("El fichero ha sido creado correctamente");
         }
-       } catch (IOException e) {
-          System.out.println("Error al craer fichero" + e.getMessage());
-       }
+        } catch (IOException e) {
+            System.out.println("Error al craer fichero" + e.getMessage());
+        }
     }
 
     public static void leerFichero(String nombre){  
-        File fichero = new File(nombre);     // Creamos fichero
+        File fichero = new File(nombre);                // Creamos fichero
 
-        if(!fichero.exists()){                 //Si el fichero no existe, le devolvemos
+        if(!fichero.exists()){                          //Si el fichero no existe, le devolvemos
             System.out.println("El fichero no existe");
             return;
         }

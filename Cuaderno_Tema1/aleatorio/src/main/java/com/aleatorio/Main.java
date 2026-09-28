@@ -1,4 +1,4 @@
-package com.aleatorio;
+/* package com.aleatorio;
 
 import  java.io.File;
 import java.io.RandomAccessFile;;
@@ -49,4 +49,4 @@ public class Main {
         }
         
     }
-}
+} */
