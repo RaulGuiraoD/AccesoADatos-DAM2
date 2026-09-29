@@ -31,7 +31,7 @@ public class OperacionesEstudiantes {
                 try {
                     lista.add(new  Estudiante(linea));
                 } catch (Exception e) {
-                   System.out.println("Formateo erroneo, linea ignroada " + linea);
+                    System.out.println("Formateo erroneo, linea ignroada " + linea);
                 }
             }
         } catch (IOException e) {
@@ -54,7 +54,7 @@ public class OperacionesEstudiantes {
 
     private static Estudiante buscar(List<Estudiante> lista, int matricula) {
         for (Estudiante estudiante : lista) {
-            if (estudiante.getMantricula() == matricula) {
+            if (estudiante.getMatricula() == matricula) {
                 return  estudiante;
             }
         }
@@ -89,7 +89,6 @@ public class OperacionesEstudiantes {
         return -1;
     }
 
-    // Menú
 
     public static  void insertarEstudiante(Scanner sc) {
         int matricula = leerMatricula(sc);

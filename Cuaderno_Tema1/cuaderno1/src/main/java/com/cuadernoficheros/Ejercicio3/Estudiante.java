@@ -25,8 +25,37 @@ public class Estudiante {
         this.notaMedia = Double.parseDouble(datos[4].trim());
     }
 
-    public int getMantricula(){
+    public int getMatricula() {
         return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getFechaInscripcion() {
+        return fechaInscripcion;
+    }
+
+    public void setFechaInscripcion(String fechaInscripcion) {
+        this.fechaInscripcion = fechaInscripcion;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public double getNotaMedia() {
+        return notaMedia;
+    }
+
+    
+    public String getNombre(){
+        return nombre;
     }
 
     public void setCurso(String curso) {
