@@ -1,7 +1,8 @@
+package com.cuadernoficheros.Ejercicio4;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CuidadorMascota implements Entrenador {
+public class Cuidadormascota implements Entrenador {
 
     private static int contadorId = 1;          
     private static final int MAX_MASCOTAS = 4;
@@ -10,7 +11,7 @@ public class CuidadorMascota implements Entrenador {
     private String nombre;
     private List<Mascota> mascotas;
 
-    public CuidadorMascota(String nombre) {
+    public Cuidadormascota(String nombre) {
         this.id = contadorId++;                 
         this.nombre = nombre;
         this.mascotas = new ArrayList<>();

@@ -1,3 +1,5 @@
+package com.cuadernoficheros.Ejercicio4;
+
 public class Huron extends Mascota {
 
     public Huron(String nombre, int edad, String raza) {

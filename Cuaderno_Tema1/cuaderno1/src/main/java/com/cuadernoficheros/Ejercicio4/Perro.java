@@ -1,3 +1,4 @@
+package com.cuadernoficheros.Ejercicio4;
 public class Perro extends Mascota {
 
     public Perro(String nombre, int edad, String raza) {

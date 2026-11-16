@@ -1,10 +1,11 @@
-public class RefugioApp {
+package com.cuadernoficheros.Ejercicio4;
+public class Refugioapp {
 
     public static void main(String[] args) {
         Refugio refugio = new Refugio();
 
-        CuidadorMascota ana = new CuidadorMascota("Ana");
-        CuidadorMascota luis = new CuidadorMascota("Luis");
+        Cuidadormascota ana = new Cuidadormascota("Ana");
+        Cuidadormascota luis = new Cuidadormascota("Luis");
         refugio.agregarCuidador(ana);
         refugio.agregarCuidador(luis);
         refugio.agregarMascota(new Perro("Rex", 3, "Labrador"));

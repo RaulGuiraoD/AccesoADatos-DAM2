@@ -1,3 +1,4 @@
+package com.cuadernoficheros.Ejercicio4;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -5,13 +6,13 @@ import java.util.List;
 public class Refugio {
 
     private List<Mascota> mascotas = new ArrayList<>();
-    private List<CuidadorMascota> cuidadores = new ArrayList<>();
+    private List<Cuidadormascota> cuidadores = new ArrayList<>();
 
     public void agregarMascota(Mascota mascota) {
         mascotas.add(mascota);
     }
 
-    public void agregarCuidador(CuidadorMascota cuidador) {
+    public void agregarCuidador(Cuidadormascota cuidador) {
         cuidadores.add(cuidador);
     }
 
@@ -21,7 +22,7 @@ public class Refugio {
 
     // Comprueba si la mascota ya la tiene algún cuidador
     private boolean estaAsignada(Mascota mascota) {
-        for (CuidadorMascota c : cuidadores) {
+        for (Cuidadormascota c : cuidadores) {
             if (c.getMascotas().contains(mascota)) {
                 return true;
             }
@@ -36,7 +37,7 @@ public class Refugio {
             }
 
             boolean asignada = false;
-            for (CuidadorMascota c : cuidadores) {
+            for (Cuidadormascota c : cuidadores) {
                 if (c.tieneEspacio()) {
                     c.asignarMascota(m);
                     asignada = true;
@@ -51,7 +52,7 @@ public class Refugio {
     }
 
     public void entrenarTodas() {
-        for (CuidadorMascota c : cuidadores) {
+        for (Cuidadormascota c : cuidadores) {
             for (Mascota m : c.getMascotas()) {
                 c.entrenar(m);
             }
@@ -62,7 +63,7 @@ public class Refugio {
         StringBuilder sb = new StringBuilder();
         sb.append("== ESTADO DEL REFUGIO ==\n");
 
-        for (CuidadorMascota c : cuidadores) {
+        for (Cuidadormascota c : cuidadores) {
             sb.append("Cuidador ").append(c.getId()).append(" - ").append(c.getNombre())
               .append(" (").append(c.getMascotas().size()).append(" mascotas)\n");
 

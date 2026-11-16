@@ -1,3 +1,4 @@
+package com.cuadernoficheros.Ejercicio4;
 public abstract class Mascota {
 
     private String nombre;
